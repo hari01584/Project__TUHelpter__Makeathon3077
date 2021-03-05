@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_24px"/>
+    <item
+        android:id="@+id/mess"
+        android:title="Mess"
+        android:icon="@drawable/ic_local_dining_24px"/>
+
+    <item
+        android:id="@+id/medical"
+        android:title="Medical"
+        android:icon="@drawable/ic_medical_services_24px"/>
+
+    <item
+        android:id="@+id/laundary"
+        android:title="Laundary"
+        android:icon="@drawable/ic_local_laundry_service_24px"/>
+
+    <item
+        android:id="@+id/roomsvc"
+        android:title="Room Service"
+        android:icon="@drawable/ic_cleaning_services_24px"/>
+
+
+
+
+</menu>

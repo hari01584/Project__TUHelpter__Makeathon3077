@@ -1,4 +1,4 @@
-package com.skullzbones.tuhelpter.ui.main;
+package com.skullzbones.tuhelpter.ui.roomsvc;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -14,25 +14,25 @@ import android.view.ViewGroup;
 
 import com.skullzbones.tuhelpter.R;
 
-public class MainFragment extends Fragment {
+public class RoomFragment extends Fragment {
 
-    private MainViewModel mViewModel;
+    private RoomViewModel mViewModel;
 
-    public static MainFragment newInstance() {
-        return new MainFragment();
+    public static RoomFragment newInstance() {
+        return new RoomFragment();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_a5, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(RoomViewModel.class);
         // TODO: Use the ViewModel
     }
 

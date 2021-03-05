@@ -1,4 +1,4 @@
-package com.skullzbones.tuhelpter.ui.main;
+package com.skullzbones.tuhelpter.ui.medical;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -14,25 +14,25 @@ import android.view.ViewGroup;
 
 import com.skullzbones.tuhelpter.R;
 
-public class MainFragment extends Fragment {
+public class MedicalFragment extends Fragment {
 
-    private MainViewModel mViewModel;
+    private MedicalViewModel mViewModel;
 
-    public static MainFragment newInstance() {
-        return new MainFragment();
+    public static MedicalFragment newInstance() {
+        return new MedicalFragment();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_a3, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(MedicalViewModel.class);
         // TODO: Use the ViewModel
     }
 

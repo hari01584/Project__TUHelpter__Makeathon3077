@@ -1,4 +1,4 @@
-package com.skullzbones.tuhelpter.ui.main;
+package com.skullzbones.tuhelpter.ui.mess;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -14,25 +14,25 @@ import android.view.ViewGroup;
 
 import com.skullzbones.tuhelpter.R;
 
-public class MainFragment extends Fragment {
+public class MessFragment extends Fragment {
 
-    private MainViewModel mViewModel;
+    private MessViewModel mViewModel;
 
-    public static MainFragment newInstance() {
-        return new MainFragment();
+    public static MessFragment newInstance() {
+        return new MessFragment();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_a4, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+        mViewModel = ViewModelProviders.of(this).get(MessViewModel.class);
         // TODO: Use the ViewModel
     }
 
